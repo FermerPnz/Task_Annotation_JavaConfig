@@ -22,7 +22,7 @@ public class MainServlet extends HttpServlet {
 
     @Override
     public void init() {
-        final var context = new AnnotationConfigApplicationContext(ru.netology.config.JavaConfig.class);
+        final var context = new AnnotationConfigApplicationContext(ru.netology);
 
         // получаем по имени бина
         final var controller = context.getBean("postController");
