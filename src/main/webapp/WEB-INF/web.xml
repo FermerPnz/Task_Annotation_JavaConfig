@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd
+https://jakarta.ee/xml/ns/jakartaee "
+         version="5.0">
+    <response-character-encoding>UTF-8</response-character-encoding>
+
+    <!-- определение servlet'а -->
+    <servlet>
+        <servlet-name>main</servlet-name>
+        <servlet-class>java.ru.netology.servlet.MainServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <!-- mapping - привязка к определённому URL -->
+    <servlet-mapping>
+        <servlet-name>main</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+</web-app>
